@@ -6,18 +6,18 @@ LogicalRecord allows to use a Restfull Json web services as models.
 
 Usage:
 
-class User < LogicalRecord::Base
+	class User < LogicalRecord::Base
 
-	establish_connection :adapter => 'restfull_json', 
-              :host => '192.168.11.8',
-              :use_ssl => false,
-              :hydra => HYDRA,
-              :use_api_key => true,
-              :api_key_name => 'access_token',
-              :api_key => "2MNFP7SrgD3QhuvuUY0hD2P8s7MSdCewHySAYvQo",
-              :resource_path => "/api/v1/users"
+		establish_connection :adapter => 'restfull_json', 
+	              :host => '192.168.11.8',
+	              :use_ssl => false,
+	              :hydra => HYDRA,
+	              :use_api_key => true,
+	              :api_key_name => 'access_token',
+	              :api_key => "2MNFP7SrgD3QhuvuUY0hD2P8s7MSdCewHySAYvQo",
+	              :resource_path => "/api/v1/users"
 
-end
+	end
 
 Supports:
 
@@ -43,7 +43,7 @@ Supports:
 
 	- User.find_by_email('mazie.goyette3@kulaslangosh.net')
 
-4) Associations/Relation Ships
+4) Associations/Relationship
         
 	- u = User.find(id)
 	- u.address
@@ -54,7 +54,7 @@ Supports:
 
 	- User.active.by_role('Admin')
 
-6) Call Backs
+6) Callbacks
 
 	- before_save
 	- before_destroy
@@ -71,7 +71,7 @@ Modifications
 
 We took latest ActiveRecord and modified accordingily to work via restfull web services
 
-Below the major changes
+Below are major changes
 
 	- Removed all database adapters
 	- Added a new connection_adapters/resetfull_json_adapters.rb
