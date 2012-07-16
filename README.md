@@ -45,8 +45,8 @@ Supports:
 
 4) Associations/Relation Ships
         
-        - u = User.find(id)
-        - u.address
+	- u = User.find(id)
+	- u.address
 	- users = User.all(:joins => :password_histories)
 	
 
@@ -75,7 +75,7 @@ Below the major changes
 
 	- Removed all database adapters
 	- Added a new connection_adapters/resetfull_json_adapters.rb
-        - Done some modifications in below files
+	- Done some modifications in below files
            	
 		1) connection_adapters/abstract/database_statement.rb
 		2) connection_adapters/abstract_adapter.rb
