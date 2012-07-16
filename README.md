@@ -62,8 +62,8 @@ Supports:
         
 7) Validations 
         
-	-  valid?         - Server side validations
-        -  valid_local?   - Only local validations
+	-  valid?         # Server side validations
+	-  valid_local?   # Only local validations
         
 ========================
 Modifications 
